@@ -2,7 +2,7 @@ package es.ulpgc.dacd.infrastructure.api;
 
 import com.google.gson.*;
 import es.ulpgc.dacd.domain.model.Station;
-import es.ulpgc.dacd.domain.model.Stations;
+import es.ulpgc.dacd.domain.port.Stations;
 
 import java.util.*;
 import java.util.stream.Collectors;

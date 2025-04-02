@@ -1,6 +1,7 @@
 package es.ulpgc.dacd;
 
 import es.ulpgc.dacd.domain.model.*;
+import es.ulpgc.dacd.domain.port.Stations;
 import es.ulpgc.dacd.domain.port.StationsRepository;
 
 import java.util.List;
@@ -15,10 +16,10 @@ public class BlaBlaCarService {
     }
 
     public void run() {
-        System.out.println("🌍 Ejecutando BlaBlaCarService...");
+        System.out.println("Ejecutando BlaBlaCarService...");
         List<Station> cleanStations = stations.getCleanStations();
-        System.out.println("📦 Estaciones obtenidas: " + cleanStations.size());
+        System.out.println("Estaciones obtenidas: " + cleanStations.size());
         repository.saveAll(cleanStations);
-        System.out.println("💾 Datos de estaciones insertados correctamente.");
+        System.out.println("Datos de estaciones insertados correctamente.");
     }
 }
