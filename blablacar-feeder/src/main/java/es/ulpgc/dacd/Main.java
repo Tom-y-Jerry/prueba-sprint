@@ -18,7 +18,7 @@ public class Main {
         BlaBlaCarAPIClient apiClient = new BlaBlaCarAPIClient(API_KEY);
         Stations stations = new BlaBlaCarStations(apiClient);
         StationsRepository repository = new SQLiteStationsRepository(DB_URL);
-        BlaBlaCarService service = new BlaBlaCarService(stations, repository);
+        BlaBlaCarServiceController service = new BlaBlaCarServiceController(stations, repository);
 
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
         //scheduler.scheduleAtFixedRate(service::run, 0, 1, TimeUnit.HOURS);
