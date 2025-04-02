@@ -1,4 +1,6 @@
-package es.ulpgc.dacd.domain.model;
+package es.ulpgc.dacd.domain.port;
+
+import es.ulpgc.dacd.domain.model.Station;
 
 import java.util.List;
 
