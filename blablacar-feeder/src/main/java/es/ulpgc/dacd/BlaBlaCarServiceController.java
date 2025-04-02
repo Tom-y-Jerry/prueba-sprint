@@ -6,11 +6,11 @@ import es.ulpgc.dacd.domain.port.StationsRepository;
 
 import java.util.List;
 
-public class BlaBlaCarService {
+public class BlaBlaCarServiceController {
     private final Stations stations;
     private final StationsRepository repository;
 
-    public BlaBlaCarService(Stations stations, StationsRepository repository) {
+    public BlaBlaCarServiceController(Stations stations, StationsRepository repository) {
         this.stations = stations;
         this.repository = repository;
     }
